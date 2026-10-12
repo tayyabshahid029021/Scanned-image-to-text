@@ -1,0 +1,12 @@
+aiTransform Solutions: Enterprise Invoice #2026-9041
+Billing Summary and Software License Details
+
+Invoice Date: October 08, 2026. Account: Enterprise Tier Gold. Currency: USD.
+
+Item 1: aiTransform OCR API License 12 Months - Quantity 1 - Rate 4800.00 - Total 4800.00.
+
+Item 2: Custom Model Fine-Tuning Service - Quantity 40 Hours - Rate 150.00 - Total 6000.00.
+
+Subtotal: 10800.00. Tax: 864.00. Total Balance Due: 11664.00 USD.
+
+aiTransform.com — Enterprise AI Tools & Digital Transformation

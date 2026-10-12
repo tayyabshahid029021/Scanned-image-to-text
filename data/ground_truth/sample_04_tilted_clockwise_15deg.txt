@@ -1,0 +1,10 @@
+aiTransform Architecture: Neural OCR Pipeline
+Technical Architecture and Preprocessing Flow
+
+Automated document skew detection employs Radon transforms, Hough line baselines, and minimum bounding rectangles.
+
+Rotational misalignment causes horizontal text bounding boxes to intersect adjacent lines if uncorrected.
+
+Applying affine inverse warping straightens the document plane and restores horizontal reading flow.
+
+aiTransform.com — Enterprise AI Tools & Digital Transformation

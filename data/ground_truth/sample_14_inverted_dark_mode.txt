@@ -1,0 +1,10 @@
+aiTransform Developer Guide: Dark Mode Printout
+High-Contrast Terminal Output and Code Documentation
+
+To initialize the aiTransform Python SDK, import the core OCR client and load your model configuration.
+
+Dark mode scans invert pixel polarities, which breaks standard models trained on black text.
+
+Automatic color inversion normalizes dark mode scans to standard black-on-white polarity.
+
+aiTransform.com — Enterprise AI Tools & Digital Transformation

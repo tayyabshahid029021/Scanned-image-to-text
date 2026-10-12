@@ -1,0 +1,10 @@
+Standard Operating Procedures: Archival Digitization
+Quality Assurance Guidelines for Physical Document Scans
+
+Archival operators must inspect scanner optical plates regularly to prevent dust accumulation.
+
+Impulse noise introduces spurious dark pixels that can be misrecognized as punctuation marks.
+
+Bilateral filtering suppresses high-frequency speckle while retaining sharp text boundary edges.
+
+aiTransform.com — Enterprise AI Tools & Digital Transformation

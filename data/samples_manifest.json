@@ -1,0 +1,142 @@
+[
+  {
+    "id": "sample_01_clear_printed_article",
+    "filename": "sample_01_clear_printed_article.png",
+    "title": "aiTransform Enterprise Briefing: AI Systems 2026",
+    "quality": "Clear / Baseline",
+    "description": "High resolution, high contrast crisp printed article with clear typography.",
+    "degradation": "none",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_01_clear_printed_article.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_01_clear_printed_article.png"
+  },
+  {
+    "id": "sample_02_slight_blur",
+    "filename": "sample_02_slight_blur.png",
+    "title": "aiTransform Research Note: Computer Vision Foundations",
+    "quality": "Slight Blur",
+    "description": "Mild optical defocus blur simulating slight hand tremor or soft focus.",
+    "degradation": "slight_blur",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_02_slight_blur.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_02_slight_blur.png"
+  },
+  {
+    "id": "sample_03_heavy_blur",
+    "filename": "sample_03_heavy_blur.png",
+    "title": "Autonomous Workflow Automation Overview",
+    "quality": "Heavy Blur",
+    "description": "Severe motion blur from rapid scanner transit or close-up camera misfocus.",
+    "degradation": "heavy_blur",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_03_heavy_blur.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_03_heavy_blur.png"
+  },
+  {
+    "id": "sample_04_tilted_clockwise_15deg",
+    "filename": "sample_04_tilted_clockwise_15deg.png",
+    "title": "aiTransform Architecture: Neural OCR Pipeline",
+    "quality": "Tilted (+15 deg)",
+    "description": "Document tilted clockwise by 15 degrees simulating skewed scanner feed.",
+    "degradation": "tilt_15",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_04_tilted_clockwise_15deg.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_04_tilted_clockwise_15deg.png"
+  },
+  {
+    "id": "sample_05_tilted_counterclockwise_30deg",
+    "filename": "sample_05_tilted_counterclockwise_30deg.png",
+    "title": "Technical Specification: Distributed Inference Engine",
+    "quality": "Tilted (-30 deg)",
+    "description": "Aggressive -30 degrees counter-clockwise skew from handheld mobile capture.",
+    "degradation": "tilt_30",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_05_tilted_counterclockwise_30deg.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_05_tilted_counterclockwise_30deg.png"
+  },
+  {
+    "id": "sample_06_low_light_underexposed",
+    "filename": "sample_06_low_light_underexposed.png",
+    "title": "aiTransform Security Policy: Data Governance Standards",
+    "quality": "Low Light / Underexposed",
+    "description": "Captured in dim ambient lighting with underexposed sensor and dark background.",
+    "degradation": "low_light",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_06_low_light_underexposed.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_06_low_light_underexposed.png"
+  },
+  {
+    "id": "sample_07_uneven_shadow_gradient",
+    "filename": "sample_07_uneven_shadow_gradient.png",
+    "title": "Product Roadmap: Next-Generation Document Processing",
+    "quality": "Uneven Shadow Gradient",
+    "description": "Non-uniform harsh diagonal shadow across the document from mobile phone capture.",
+    "degradation": "harsh_shadow",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_07_uneven_shadow_gradient.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_07_uneven_shadow_gradient.png"
+  },
+  {
+    "id": "sample_08_noisy_salt_and_pepper",
+    "filename": "sample_08_noisy_salt_and_pepper.png",
+    "title": "Standard Operating Procedures: Archival Digitization",
+    "quality": "Noisy / Salt & Pepper",
+    "description": "High scanner sensor noise, glass dust speckles, and toner artifacting.",
+    "degradation": "noisy",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_08_noisy_salt_and_pepper.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_08_noisy_salt_and_pepper.png"
+  },
+  {
+    "id": "sample_09_low_contrast_faded",
+    "filename": "sample_09_low_contrast_faded.png",
+    "title": "aiTransform Service Order & Fulfillment Notice",
+    "quality": "Low Contrast / Faded",
+    "description": "Faded thermal receipt print or washed out low-toner laser printing.",
+    "degradation": "faded",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_09_low_contrast_faded.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_09_low_contrast_faded.png"
+  },
+  {
+    "id": "sample_10_multi_column_newsletter",
+    "filename": "sample_10_multi_column_newsletter.png",
+    "title": "aiTransform Insights: The Multi-Column Frontier",
+    "quality": "Multi-Column Layout",
+    "description": "Dual column printed layout testing reading order reconstruction.",
+    "degradation": "multi_column",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_10_multi_column_newsletter.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_10_multi_column_newsletter.png"
+  },
+  {
+    "id": "sample_11_rotated_90deg",
+    "filename": "sample_11_rotated_90deg.png",
+    "title": "Operational Memo: Landscape Efficiency Metrics",
+    "quality": "Rotated 90 Degrees",
+    "description": "Document scanned completely sideways (90 degrees clockwise).",
+    "degradation": "rotated_90",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_11_rotated_90deg.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_11_rotated_90deg.png"
+  },
+  {
+    "id": "sample_12_crumpled_distorted",
+    "filename": "sample_12_crumpled_distorted.png",
+    "title": "Field Inspection Checklist: Physical Asset Audit",
+    "quality": "Crumpled Paper",
+    "description": "Creased and crumpled paper texture with warped baselines and shading ripples.",
+    "degradation": "crumpled",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_12_crumpled_distorted.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_12_crumpled_distorted.png"
+  },
+  {
+    "id": "sample_13_small_font_invoice",
+    "filename": "sample_13_small_font_invoice.png",
+    "title": "aiTransform Solutions: Enterprise Invoice #2026-9041",
+    "quality": "Small Font / Tabular",
+    "description": "Fine 9pt condensed font with tabular numeric values and financial codes.",
+    "degradation": "small_font",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_13_small_font_invoice.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_13_small_font_invoice.png"
+  },
+  {
+    "id": "sample_14_inverted_dark_mode",
+    "filename": "sample_14_inverted_dark_mode.png",
+    "title": "aiTransform Developer Guide: Dark Mode Printout",
+    "quality": "Inverted / Dark Mode",
+    "description": "White and light gray text printed on dark background.",
+    "degradation": "inverted",
+    "ground_truth_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/ground_truth/sample_14_inverted_dark_mode.txt",
+    "image_path": "/Users/abubakar/.gemini/antigravity/scratch/aitransform-ocr/data/samples/sample_14_inverted_dark_mode.png"
+  }
+]
