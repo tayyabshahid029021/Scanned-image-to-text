@@ -1,0 +1,462 @@
+{
+  "timestamp": "2026-10-12 12:54:50",
+  "total_samples": 14,
+  "overall_metrics": {
+    "average_raw_cer": 0.3479,
+    "average_enhanced_cer": 0.2944,
+    "average_raw_char_accuracy_pct": 65.21,
+    "average_enhanced_char_accuracy_pct": 70.56,
+    "average_latency_ms": 845.7,
+    "overall_cer_improvement": 0.0535
+  },
+  "samples": [
+    {
+      "id": "sample_01_clear_printed_article",
+      "title": "aiTransform Enterprise Briefing: AI Systems 2026",
+      "quality": "Clear / Baseline",
+      "degradation": "none",
+      "raw": {
+        "cer": 0.1826,
+        "wer": 0.7349,
+        "char_accuracy_pct": 81.74,
+        "word_accuracy_pct": 26.51,
+        "latency_ms": 1212.6,
+        "extracted_chars": 596,
+        "text_snippet": "aiTransform Enterprise Briefing: Al Systems 2026 Executive Briefing on Artificial Intelligence and Digital Transformation  Artificialintelligencehasmo"
+      },
+      "enhanced": {
+        "cer": 0.1826,
+        "wer": 0.7349,
+        "char_accuracy_pct": 81.74,
+        "word_accuracy_pct": 26.51,
+        "latency_ms": 882.2,
+        "extracted_chars": 596,
+        "text_snippet": "aiTransform Enterprise Briefing: Al Systems 2026 Executive Briefing on Artificial Intelligence and Digital Transformation  Artificialintelligencehasmo"
+      },
+      "improvement": {
+        "cer_delta": 0.0,
+        "char_acc_delta_pct": 0.0
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Baseline scan processes cleanly. Minor errors occur where compound brand words (e.g. 'aiTransform') or tight inter-word kerning are joined without spaces.",
+        "mitigation": "High-DPI rendering and standard character spacing preserve optimal text detection."
+      }
+    },
+    {
+      "id": "sample_02_slight_blur",
+      "title": "aiTransform Research Note: Computer Vision Foundations",
+      "quality": "Slight Blur",
+      "degradation": "slight_blur",
+      "raw": {
+        "cer": 0.1939,
+        "wer": 0.8333,
+        "char_accuracy_pct": 80.61,
+        "word_accuracy_pct": 16.67,
+        "latency_ms": 817.8,
+        "extracted_chars": 425,
+        "text_snippet": "aiTransformResearchNote:ComputerVisionFoundation Analysis of Deep Leaming Architectures inDocumentParsing  Computervisionpipelinescombineedgedetection"
+      },
+      "enhanced": {
+        "cer": 0.0595,
+        "wer": 0.4667,
+        "char_accuracy_pct": 94.05,
+        "word_accuracy_pct": 53.33,
+        "latency_ms": 915.3,
+        "extracted_chars": 495,
+        "text_snippet": "aiTransform Research Note: Computer Vision Foundation Analysis of Deep Leaming Architectures in Document Parsing  Computer vision pipelines combine ed"
+      },
+      "improvement": {
+        "cer_delta": 0.1344,
+        "char_acc_delta_pct": 13.44
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Slight edge softening causes subtle character confusions (e.g., 'c' misread as 'e', or 'rn' merged into 'm').",
+        "mitigation": "Unsharp masking filter sharpens high-frequency edge gradients, restoring glyph contours."
+      }
+    },
+    {
+      "id": "sample_03_heavy_blur",
+      "title": "Autonomous Workflow Automation Overview",
+      "quality": "Heavy Blur",
+      "degradation": "heavy_blur",
+      "raw": {
+        "cer": 0.9699,
+        "wer": 1.0,
+        "char_accuracy_pct": 3.01,
+        "word_accuracy_pct": 0.0,
+        "latency_ms": 268.7,
+        "extracted_chars": 15,
+        "text_snippet": "WifpwufaiOwriem"
+      },
+      "enhanced": {
+        "cer": 1.0,
+        "wer": 1.0,
+        "char_accuracy_pct": 0.0,
+        "word_accuracy_pct": 0.0,
+        "latency_ms": 650.6,
+        "extracted_chars": 0,
+        "text_snippet": ""
+      },
+      "improvement": {
+        "cer_delta": -0.0301,
+        "char_acc_delta_pct": -3.01
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Severe optical defocus destroys fine character strokes; small punctuation marks (commas, periods) are completely washed out, and ascenders/descenders merge with adjacent letter stems.",
+        "mitigation": "Aggressive Laplacian sharpening and local contrast enhancement recover macroscopic word contours, though extreme blur remains an intrinsic optical limit."
+      }
+    },
+    {
+      "id": "sample_04_tilted_clockwise_15deg",
+      "title": "aiTransform Architecture: Neural OCR Pipeline",
+      "quality": "Tilted (+15 deg)",
+      "degradation": "tilt_15",
+      "raw": {
+        "cer": 0.5896,
+        "wer": 0.7069,
+        "char_accuracy_pct": 41.04,
+        "word_accuracy_pct": 29.31,
+        "latency_ms": 716.7,
+        "extracted_chars": 453,
+        "text_snippet": "Technical Architecture and Preprocessing Flow ransform Architecture: Neural OcR Pipeline if uncorrected. and minimum bounding rectangles. Automated do"
+      },
+      "enhanced": {
+        "cer": 0.575,
+        "wer": 0.7759,
+        "char_accuracy_pct": 42.5,
+        "word_accuracy_pct": 22.41,
+        "latency_ms": 1020.7,
+        "extracted_chars": 439,
+        "text_snippet": "readingflow. ifuncorrected. andminimumboundingrectangles. AutomateddocumentskewdetectionemploysRadontransforms,Houghlinebaselines Technical Architectu"
+      },
+      "improvement": {
+        "cer_delta": 0.0146,
+        "char_acc_delta_pct": 1.46
+      },
+      "diagnosis": {
+        "what_goes_wrong": "At 15 degrees tilt, horizontal line grouping fails; rectangular detection boxes intersect adjacent lines, fragmenting paragraphs into diagonal snippets.",
+        "mitigation": "Automated Hough line and minimum bounding rectangle deskew detects the 15-degree angle and applies affine inverse rotation, restoring full readability."
+      }
+    },
+    {
+      "id": "sample_05_tilted_counterclockwise_30deg",
+      "title": "Technical Specification: Distributed Inference Engine",
+      "quality": "Tilted (-30 deg)",
+      "degradation": "tilt_30",
+      "raw": {
+        "cer": 0.5563,
+        "wer": 0.78,
+        "char_accuracy_pct": 44.37,
+        "word_accuracy_pct": 22.0,
+        "latency_ms": 475.1,
+        "extracted_chars": 224,
+        "text_snippet": "Specification:Distributed InferenceEng ility tyandLatencyBenchmarks cores. Severe angular displacement requires robust multi-angle detection prior to "
+      },
+      "enhanced": {
+        "cer": 0.6623,
+        "wer": 0.8,
+        "char_accuracy_pct": 33.77,
+        "word_accuracy_pct": 20.0,
+        "latency_ms": 716.0,
+        "extracted_chars": 186,
+        "text_snippet": "l Specification: Distributed Inference Engin s divide heavy matrix workloads across heterogeneous d LatencyBenchmarks clusters ility and L ed inferenc"
+      },
+      "improvement": {
+        "cer_delta": -0.106,
+        "char_acc_delta_pct": -10.6
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Aggressive 30-degree rotation causes standard axis-aligned text detectors to miss lines completely or truncate lines at image borders.",
+        "mitigation": "Deskewing straightens the primary baseline. Angles beyond 20 degrees require auto-deskew or manual slider adjustment before OCR recognition."
+      }
+    },
+    {
+      "id": "sample_06_low_light_underexposed",
+      "title": "aiTransform Security Policy: Data Governance Standards",
+      "quality": "Low Light / Underexposed",
+      "degradation": "low_light",
+      "raw": {
+        "cer": 0.1141,
+        "wer": 0.1818,
+        "char_accuracy_pct": 88.59,
+        "word_accuracy_pct": 81.82,
+        "latency_ms": 961.0,
+        "extracted_chars": 461,
+        "text_snippet": "aiTransform Security Policy: Data Governance Standards Confidentiality, Integrity and Access Governance  Enterprise data governance mandates end-to-en"
+      },
+      "enhanced": {
+        "cer": 0.1494,
+        "wer": 0.2364,
+        "char_accuracy_pct": 85.06,
+        "word_accuracy_pct": 76.36,
+        "latency_ms": 985.3,
+        "extracted_chars": 417,
+        "text_snippet": "al ransform Security Policy: Data Governance Standards Confidentiality, Integrty, and Access Governance.  Enterprise data governance mandates end-to-e"
+      },
+      "improvement": {
+        "cer_delta": -0.0353,
+        "char_acc_delta_pct": -3.53
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Low light underexposure pushes text into dark shadow zones. Low SNR (signal-to-noise ratio) and sensor noise obscure faint characters.",
+        "mitigation": "CLAHE (Contrast Limited Adaptive Histogram Equalization) stretches dynamic range across local tiles, boosting text contrast without amplifying sensor noise."
+      }
+    },
+    {
+      "id": "sample_07_uneven_shadow_gradient",
+      "title": "Product Roadmap: Next-Generation Document Processing",
+      "quality": "Uneven Shadow Gradient",
+      "degradation": "harsh_shadow",
+      "raw": {
+        "cer": 0.0281,
+        "wer": 0.2449,
+        "char_accuracy_pct": 97.19,
+        "word_accuracy_pct": 75.51,
+        "latency_ms": 981.8,
+        "extracted_chars": 454,
+        "text_snippet": "Product Roadmap: Next-Generation Document Processin Milestones and Strategic Objectives 2026-2027  Strategic milestones prioritize intelligent layout "
+      },
+      "enhanced": {
+        "cer": 0.0302,
+        "wer": 0.3265,
+        "char_accuracy_pct": 96.98,
+        "word_accuracy_pct": 67.35,
+        "latency_ms": 1000.1,
+        "extracted_chars": 453,
+        "text_snippet": "Product Roadmap: Next-Generation Document Processin MilestonesandStrategicObjectives2026-2027  Strategic milestones prioritize intelligent layout deco"
+      },
+      "improvement": {
+        "cer_delta": -0.0021,
+        "char_acc_delta_pct": -0.21
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Harsh diagonal shadow creates a non-uniform illumination gradient. Global Otsu thresholding turns shaded text completely black while washing out bright regions.",
+        "mitigation": "Morphological background estimation and illumination division normalize the lighting field before adaptive thresholding."
+      }
+    },
+    {
+      "id": "sample_08_noisy_salt_and_pepper",
+      "title": "Standard Operating Procedures: Archival Digitization",
+      "quality": "Noisy / Salt & Pepper",
+      "degradation": "noisy",
+      "raw": {
+        "cer": 0.3701,
+        "wer": 0.4821,
+        "char_accuracy_pct": 62.99,
+        "word_accuracy_pct": 51.79,
+        "latency_ms": 765.3,
+        "extracted_chars": 299,
+        "text_snippet": "Standard Operating Procedures: Archival Digitization Quality Assurance Guidelines for Physical Document Scans:  Archival operators must inspect scanne"
+      },
+      "enhanced": {
+        "cer": 0.1688,
+        "wer": 0.3929,
+        "char_accuracy_pct": 83.12,
+        "word_accuracy_pct": 60.71,
+        "latency_ms": 819.9,
+        "extracted_chars": 395,
+        "text_snippet": "Standard Operating Procedures: Archival Digitization Quality Assurance Guidelines for Physical Document Scans:  Archival operators must inspect scanne"
+      },
+      "improvement": {
+        "cer_delta": 0.2013,
+        "char_acc_delta_pct": 20.13
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Salt-and-pepper photocopier noise creates spurious dark dots that OCR interprets as apostrophes, hyphens, periods, or random punctuation.",
+        "mitigation": "Bilateral filtering eliminates isolated impulse noise speckles while preserving sharp text boundaries."
+      }
+    },
+    {
+      "id": "sample_09_low_contrast_faded",
+      "title": "aiTransform Service Order & Fulfillment Notice",
+      "quality": "Low Contrast / Faded",
+      "degradation": "faded",
+      "raw": {
+        "cer": 0.2083,
+        "wer": 0.3333,
+        "char_accuracy_pct": 79.17,
+        "word_accuracy_pct": 66.67,
+        "latency_ms": 943.7,
+        "extracted_chars": 364,
+        "text_snippet": "aiTransform Service Order & Fulfillment Notice TransactionRecord and SystemProvisioning Confirmation  alpha.  Faded printer ribbons produce low optica"
+      },
+      "enhanced": {
+        "cer": 0.1952,
+        "wer": 0.2456,
+        "char_accuracy_pct": 80.48,
+        "word_accuracy_pct": 75.44,
+        "latency_ms": 909.5,
+        "extracted_chars": 373,
+        "text_snippet": "aiTransform Service Order & Fulfillment Notice Transaction Record and System Provisioning Confirmation  Order Reference: TR-8849201. Cloud instance al"
+      },
+      "improvement": {
+        "cer_delta": 0.0131,
+        "char_acc_delta_pct": 1.31
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Faded thermal printing has low optical contrast against the background; faint letter stems fade below detection thresholds.",
+        "mitigation": "Adaptive local Gaussian thresholding calculates local window means, capturing faint strokes even when global luminance is washed out."
+      }
+    },
+    {
+      "id": "sample_10_multi_column_newsletter",
+      "title": "aiTransform Insights: The Multi-Column Frontier",
+      "quality": "Multi-Column Layout",
+      "degradation": "multi_column",
+      "raw": {
+        "cer": 0.3003,
+        "wer": 0.4889,
+        "char_accuracy_pct": 69.97,
+        "word_accuracy_pct": 51.11,
+        "latency_ms": 551.0,
+        "extracted_chars": 369,
+        "text_snippet": "aiTransform Insights: The Multi-Column Frontier LayoutDecomposition in ComplexMagazineFormats  Columnar formatting challenges naive Modern layout anal"
+      },
+      "enhanced": {
+        "cer": 0.3003,
+        "wer": 0.4889,
+        "char_accuracy_pct": 69.97,
+        "word_accuracy_pct": 51.11,
+        "latency_ms": 473.4,
+        "extracted_chars": 369,
+        "text_snippet": "aiTransform Insights: The Multi-Column Frontier LayoutDecomposition in ComplexMagazineFormats  Columnar formatting challenges naive Modern layout anal"
+      },
+      "improvement": {
+        "cer_delta": 0.0,
+        "char_acc_delta_pct": 0.0
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Standard top-to-bottom line reading order can traverse horizontally across column gutters, interleaving sentences from column 1 and column 2 into an unreadable mix.",
+        "mitigation": "Vertical gutter detection separates text blocks by X-coordinate clusters before vertical sorting."
+      }
+    },
+    {
+      "id": "sample_11_rotated_90deg",
+      "title": "Operational Memo: Landscape Efficiency Metrics",
+      "quality": "Rotated 90 Degrees",
+      "degradation": "rotated_90",
+      "raw": {
+        "cer": 0.6287,
+        "wer": 0.82,
+        "char_accuracy_pct": 37.13,
+        "word_accuracy_pct": 18.0,
+        "latency_ms": 780.4,
+        "extracted_chars": 351,
+        "text_snippet": "aiTransform.com \u2014 Enterprise Al Tools & Digital Transformation detectors. rotation. entry. Cross-Departmental Performance Indicators Orientation class"
+      },
+      "enhanced": {
+        "cer": 0.0342,
+        "wer": 0.28,
+        "char_accuracy_pct": 96.58,
+        "word_accuracy_pct": 72.0,
+        "latency_ms": 828.4,
+        "extracted_chars": 428,
+        "text_snippet": "Operational Memo: Landscape Efficiency Metrics Cross-DepartmentalPerformanceIndicators  Key performance indicators highlight a thirty-five percent red"
+      },
+      "improvement": {
+        "cer_delta": 0.5945,
+        "char_acc_delta_pct": 59.45
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Horizontal OCR text models expect horizontal text. Sideways 90-degree scans result in 100% recognition failure or gibberish characters.",
+        "mitigation": "Orientation classifier or 90-degree fixed rotation toolbar restores the document to upright orientation prior to detection."
+      }
+    },
+    {
+      "id": "sample_12_crumpled_distorted",
+      "title": "Field Inspection Checklist: Physical Asset Audit",
+      "quality": "Crumpled Paper",
+      "degradation": "crumpled",
+      "raw": {
+        "cer": 0.243,
+        "wer": 0.5385,
+        "char_accuracy_pct": 75.7,
+        "word_accuracy_pct": 46.15,
+        "latency_ms": 809.8,
+        "extracted_chars": 328,
+        "text_snippet": "Field Inspection Checklist: Physical Asset Audit On-SiteHardwareVerificationandCompliance  Papercreasesintroducenon-lineargepmetricwarpingand linearsh"
+      },
+      "enhanced": {
+        "cer": 0.2383,
+        "wer": 0.5,
+        "char_accuracy_pct": 76.17,
+        "word_accuracy_pct": 50.0,
+        "latency_ms": 857.5,
+        "extracted_chars": 330,
+        "text_snippet": "Field Inspection Checklist: Physical Asset Audit On-SiteHardwareVerificationandCompliance  Physical inspection of rack servers cpnfirmed all biometric"
+      },
+      "improvement": {
+        "cer_delta": 0.0047,
+        "char_acc_delta_pct": 0.47
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Fold creases introduce curved baseline distortions and dark linear shadows across printed words, breaking words into broken segments.",
+        "mitigation": "Shadow removal and bilateral filtering suppress shadow creases, while adaptive thresholding stabilizes baseline detection."
+      }
+    },
+    {
+      "id": "sample_13_small_font_invoice",
+      "title": "aiTransform Solutions: Enterprise Invoice #2026-9041",
+      "quality": "Small Font / Tabular",
+      "degradation": "small_font",
+      "raw": {
+        "cer": 0.4329,
+        "wer": 0.9028,
+        "char_accuracy_pct": 56.71,
+        "word_accuracy_pct": 9.72,
+        "latency_ms": 893.8,
+        "extracted_chars": 280,
+        "text_snippet": "aiTransform Solutions:EnterpriseInvoice #2026-9041 BillingSummary andSoftwareLicenseDetails  InvoiceDate:October08,2026.Account:EnterpriseTierGold.Cur"
+      },
+      "enhanced": {
+        "cer": 0.4329,
+        "wer": 0.9028,
+        "char_accuracy_pct": 56.71,
+        "word_accuracy_pct": 9.72,
+        "latency_ms": 717.3,
+        "extracted_chars": 280,
+        "text_snippet": "aiTransform Solutions:EnterpriseInvoice #2026-9041 BillingSummary andSoftwareLicenseDetails  InvoiceDate:October08,2026.Account:EnterpriseTierGold.Cur"
+      },
+      "improvement": {
+        "cer_delta": 0.0,
+        "char_acc_delta_pct": 0.0
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Small 9pt tabular text has tiny glyph openings; numbers like '8' vs '3', '0' vs 'O', and decimal points can be misclassified under low resolution.",
+        "mitigation": "High-resolution 300+ DPI scanning and CLAHE contrast sharpening preserve minute numeric character details."
+      }
+    },
+    {
+      "id": "sample_14_inverted_dark_mode",
+      "title": "aiTransform Developer Guide: Dark Mode Printout",
+      "quality": "Inverted / Dark Mode",
+      "degradation": "inverted",
+      "raw": {
+        "cer": 0.0529,
+        "wer": 0.5082,
+        "char_accuracy_pct": 94.71,
+        "word_accuracy_pct": 49.18,
+        "latency_ms": 978.1,
+        "extracted_chars": 434,
+        "text_snippet": "aiTransformDeveloper Guide:DarkModePrintout High-ContrastTerminal Output and CodeDocumentation  Toinitialize the aiTransformPython SDK,import the core"
+      },
+      "enhanced": {
+        "cer": 0.0925,
+        "wer": 0.7705,
+        "char_accuracy_pct": 90.75,
+        "word_accuracy_pct": 22.95,
+        "latency_ms": 1064.0,
+        "extracted_chars": 416,
+        "text_snippet": "aiTransform Developer Guide: Dark Mode Printout High-ContrastTerminal Outputand CodeDocumentation  ToinitializetheaiTransformPythonSDK,importthecoreOC"
+      },
+      "improvement": {
+        "cer_delta": -0.0396,
+        "char_acc_delta_pct": -3.96
+      },
+      "diagnosis": {
+        "what_goes_wrong": "Standard OCR models are trained on dark text over light backgrounds. Inverted dark mode documents fail with nearly 100% error rate.",
+        "mitigation": "Color inversion (255 - pixel) flips the polarity back to black-on-white, achieving full recognition accuracy."
+      }
+    }
+  ]
+}
